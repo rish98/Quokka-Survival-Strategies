@@ -1,0 +1,18 @@
+from vertex import Vertex
+from graph import QuokkaMaze
+
+A = Vertex(False)
+B = Vertex(False)
+C = Vertex(True)
+D = Vertex(False)
+E = Vertex(True)
+
+m = QuokkaMaze()
+
+m.add_vertex(A)
+m.add_vertex(B)
+m.add_vertex(C)
+m.add_vertex(D)
+m.add_vertex(E)
+
+print(m.find_path(A,E,2))
